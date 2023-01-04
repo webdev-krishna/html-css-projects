@@ -12,7 +12,7 @@ body{
     height: 300px;
 }
 .navbar {
-    background-color: rgb(23, 23, 79);
+    background-color: #3426d099;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -24,11 +24,22 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    
 }
+.left-links li {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .left-links {
     flex-grow: 1;
-    font-size: large;
-    font-weight: 700;
+    font-size: x-large;
+    font-weight: 900;
+}
+.left-links a {
+    color: yellow;
 }
 .right-links {
     margin: 0;
@@ -36,7 +47,50 @@ ul {
 a{
     text-decoration: none;
     color: aliceblue;
+    font-size: 20px;
     display: block;
     text-align: center;
     padding: 10px;
+}
+li a::before {
+    color: #3426d099;
+}
+li a:hover {
+    color: yellow;
+}
+
+.hero{
+    background-color: rgb(23, 23, 79);
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px 30px 10px;
+    gap: 30px;
+    
+}
+.hero-text{
+    /*background-color: rgb(106, 96, 83);*/
+    flex-basis: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+.hero-text h1{
+    margin: 0;
+    color: yellow;
+}
+.hero-text p {
+    color: aliceblue;
+}
+.hero-img {
+    
+    
+}
+.hero-img img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #fff;
 }
